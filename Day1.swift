@@ -1,10 +1,10 @@
 import Foundation
 
 let input = """
-<Insert your input here>
+//values here pls
 """
 
-let totals = input
+let cheese = input
 	.components(separatedBy: "\n\n")
 	.map { line in
 		line
@@ -14,13 +14,13 @@ let totals = input
 	}
 
 func partOne() -> String {
-	totals
+	cheese
 		.max()!
 		.description
 }
 
 func partTwo() -> String {
-	totals
+	cheese
 		.sorted(by: >)
 		.prefix(3)
 		.reduce(0, +)
